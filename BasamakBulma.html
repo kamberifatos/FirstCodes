@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basamak Bulma</title>
+    </head>
+    <body>
+        
+        <script>
+            /*Klavyeden girilen 3 basamaklı sayının 1. 2. ve 3. basamağını 
+            (Basamak Değerlerini) yazdıran programın algoritması. */
+            var num = prompt("3 basamakli sayi giriniz: ");
+            var bas_1, bas_2, bas_3; // 'bas' = Basamak demek.
+            bas_1 = num % 10; // Or: 123%10 demektir --> 123/10 = 12 , Kalan = 3 = bas_1
+            bas_2 = Math.floor((num/10))%10; // (123/10) = 12; 12%10 = 1--> Kalan = 2   
+            bas_3 = Math.floor((num/100))%10; // 123/100 = 1 --> 1%10 = 1
+            document.write(bas_1,"<br>", bas_2,"<br>", bas_3);
+        </script>
+    </body>
+</html>
